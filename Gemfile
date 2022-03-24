@@ -5,10 +5,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-ruby "3.0.1"
+ruby "2.7.4"
 
-# Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.0.1"
 
 gem "autoprefixer-rails"
 
@@ -17,6 +15,7 @@ gem "honeybadger"
 gem "pg"
 gem "puma"
 gem "rack-canonical-host"
+gem "rails", "~> 6.0.0"
 gem "recipient_interceptor"
 gem "sassc-rails"
 gem "skylight"
@@ -44,3 +43,20 @@ group :test do
 end
 
 gem "suspenders", group: [:development, :test]
+
+gem 'rack-mini-profiler', require: false
+gem 'oj'
+gem 'high_voltage'
+gem 'bourbon', '>= 6.0.0'
+gem 'rspec-rails', '~> 3.6', group: [:development, :test]
+gem 'shoulda-matchers', group: :test
+gem 'simplecov', require: false, group: [:test]
+gem 'webdrivers', group: :test
+gem 'simple_form'
+gem 'bullet', group: [:development, :test]
+gem 'factory_bot_rails', group: [:development, :test]
+gem 'standard', group: :development
+gem 'delayed_job_active_record'
+gem 'inline_svg'
+gem 'bundler-audit', '>= 0.7.0', require: false, group: [:development, :test]
+gem 'rack-timeout', group: :production
