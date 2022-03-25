@@ -1,11 +1,11 @@
 FactoryBot.define do
-  factory :article do
-    name { "MyString" }
-    author { nil }
-  end
 
   factory :user do
-    name { "MyString" }
+    name { "test name" }
   end
 
+  factory :article do
+    title { "MyString" }
+    user
+  end
 end
