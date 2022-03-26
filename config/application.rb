@@ -34,5 +34,6 @@ module TestProject
 
     config.generators.system_tests = nil
     config.active_job.queue_adapter = :delayed_job
+    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
   end
 end
