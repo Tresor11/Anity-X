@@ -63,3 +63,4 @@ gem 'delayed_job_active_record'
 gem 'inline_svg'
 gem 'bundler-audit', '>= 0.7.0', require: false, group: [:development, :test]
 gem 'rack-timeout', group: :production
+gem "tailwindcss-rails", "~> 2.0"

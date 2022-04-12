@@ -321,6 +321,8 @@ GEM
       bundler (>= 1.0.7)
       rails (>= 3.0.3)
       trout (>= 0.3.0)
+    tailwindcss-rails (2.0.8)
+      railties (>= 6.0.0)
     thor (1.2.1)
     tilt (2.0.10)
     timecop (0.9.5)
@@ -397,6 +399,7 @@ DEPENDENCIES
   sprockets-rails
   standard
   suspenders
+  tailwindcss-rails (~> 2.0)
   timecop
   title
   tzinfo-data
