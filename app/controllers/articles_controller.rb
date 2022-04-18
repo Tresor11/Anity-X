@@ -11,10 +11,12 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    @article = current_user.articles.build(article_params)
+    @article = current_user.articles.new(article_params)
     if @article.save
+      flash.notice = "Article was successfully created."
       redirect_to articles_path
     else
+      flash.alert = @article.errors.full_messages.join(", ")
       render :new
     end
   end

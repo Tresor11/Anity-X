@@ -26,6 +26,7 @@ gem "title"
 gem "tzinfo-data", platforms: [:mingw, :x64_mingw, :mswin, :jruby]
 gem "webpacker"
 gem "clearance"
+gem 'image_processing', '~> 1.2'
 
 group :development do
   gem "listen"
