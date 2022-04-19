@@ -24,7 +24,6 @@ RSpec.feature "Visitor updates password" do
     change_password_to ""
 
     expect(page).to have_content I18n.t("flashes.failure_after_update")
-    save_and_open_page
     expect_user_to_be_signed_out
   end
 
