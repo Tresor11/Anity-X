@@ -1,5 +1,4 @@
 FactoryBot.define do
-
   factory :user do
     name { "test name" }
     sequence :email do |n|

@@ -34,7 +34,7 @@ module Features
       visit root_path
       expect(page).to have_link(
         I18n.t("layouts.application.sign_out"),
-        href: sign_out_path,
+        href: sign_out_path
       )
     end
 

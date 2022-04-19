@@ -16,15 +16,15 @@ class AddClearanceToUsers < ActiveRecord::Migration[6.0]
       update <<-SQL.squish
         UPDATE users
         SET remember_token = '#{Clearance::Token.new}'
-        WHERE id = '#{user['id']}'
+        WHERE id = '#{user["id"]}'
       SQL
     end
   end
 
-  def self.down                     
+  def self.down
     remove_index :users, :email
     remove_index :users, :remember_token
-           
+
     change_table :users do |t|
       t.remove :email, :encrypted_password, :confirmation_token, :remember_token
     end
