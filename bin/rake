@@ -2,8 +2,4 @@
 require_relative "../config/boot"
 require "rake"
 
-if !Rails.env.production?
-  require "standard/rake"
-end
-
 Rake.application.run
