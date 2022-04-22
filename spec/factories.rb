@@ -9,6 +9,7 @@ FactoryBot.define do
 
   factory :article do
     title { "MyString" }
+    content { "Test content" }
     user
   end
 end
